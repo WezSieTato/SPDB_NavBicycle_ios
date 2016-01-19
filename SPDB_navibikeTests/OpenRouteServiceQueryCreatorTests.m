@@ -24,11 +24,11 @@
 
     NSURL *url = [OpenRouteServiceQueryCreator urlWithLocations:array
                                                routePreferences:OpenRouteServiceRoutePreferencesBicycle];
-
     NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:YES];
 
     XCTAssertEqualObjects([components queryValueWithName:@"start"], @"49.240011,9.256506");
     XCTAssertEqualObjects([components queryValueWithName:@"end"], @"49.760600,8.720830");
+    XCTAssertEqualObjects([components queryValueWithName:@"via"], @"");
 }
 
 -(void)testRouteParametersWith4Points {
@@ -40,8 +40,11 @@
 
     NSURL *url = [OpenRouteServiceQueryCreator urlWithLocations:array
                                                routePreferences:OpenRouteServiceRoutePreferencesBicycle];
+    NSURLComponents *components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:YES];
 
-    XCTAssertEqualObjects(url.description,@"http://openls.geog.uni-heidelberg.de/route?start=49.240011,9.256506&via=50.760600,8.720830&via=51.760600,7.720830&end=52.760600,6.720830&routepref=Bicycle&distunit=KM&weighting=Shortest&avoidAreas=&useTMC=false&noMotorways=false&noTollways=false&noUnpavedroads=false&noSteps=false&noFerries=false&instructions=false&lang=de");
+    XCTAssertEqualObjects([components queryValueWithName:@"start"], @"49.240011,9.256506");
+    XCTAssertEqualObjects([components queryValueWithName:@"end"], @"52.760600,6.720830");
+    XCTAssertEqualObjects([components queryValueWithName:@"via"], @"50.760600,8.720830 51.760600,7.720830");
 }
 
 @end

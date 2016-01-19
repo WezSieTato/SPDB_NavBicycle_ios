@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import "StationAnnotation.h"
+#import "MKPolylineView+ColorPolyline.h"
 
 @interface MapViewController () <MKMapViewDelegate>
 
@@ -43,8 +44,8 @@
     self.navigationController.toolbarHidden = YES;
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     self.navigationController.toolbarHidden = NO;
 }
 
@@ -53,7 +54,7 @@
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay {
 
     if([overlay isKindOfClass:[ColorPolyline class]]) {
-        return [[MKPolylineView alloc] initWithPolyline:(ColorPolyline *)overlay];
+        return [[MKPolylineView alloc] initWithColorPolyline:(ColorPolyline *)overlay];
     }
 
     return nil;

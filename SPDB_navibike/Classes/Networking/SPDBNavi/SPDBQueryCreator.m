@@ -11,7 +11,7 @@
 @implementation SPDBQueryCreator
 
 + (NSURL *)urlWithStartLocation:(CLLocationCoordinate2D)start andEndLocation:(CLLocationCoordinate2D)end {
-    NSURLComponents *components = [NSURLComponents componentsWithString:@"http://localhost:8080/route"];
+    NSURLComponents *components = [NSURLComponents componentsWithString:@"http://192.168.0.14:8080/route"];
     NSMutableArray *queryItems = [[NSMutableArray alloc] init];
 
     [queryItems addObject:[NSURLQueryItem queryItemWithName:@"startLat"

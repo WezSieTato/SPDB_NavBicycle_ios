@@ -18,7 +18,7 @@
         _start = [[SPDBPoint alloc] initWithDictionary:dictionary[@"start"]];
         _end = [[SPDBPoint alloc] initWithDictionary:dictionary[@"end"]];
         NSDictionary *inDictionary = dictionary[@"routePoints"];
-        _stations = [NSArray arrayModelFromArrayDictionary:inDictionary[@"verturiloStations"]
+        _stations = [NSArray arrayModelFromArrayDictionary:inDictionary[@"veturiloStations"]
                                                  withClass:[SPDBStation class]];
         _costs = inDictionary[@"costs"];
     }

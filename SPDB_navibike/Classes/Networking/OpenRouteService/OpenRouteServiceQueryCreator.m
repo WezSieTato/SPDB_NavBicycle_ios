@@ -14,7 +14,7 @@
 //http://openls.geog.uni-heidelberg.de/route?
 // &start=9.256506,49.240011
 // &end=8.72083,49.7606
-// &via=
+// &via=7.0920891,50.7295968 7.1044487,50.7247613 7.1049637,50.7298142
 // &lang=de
 // &distunit=KM
 // &routepref=Bicycle
@@ -32,16 +32,9 @@
     NSURLComponents *components = [NSURLComponents componentsWithString:@"http://openls.geog.uni-heidelberg.de/route"];
     NSMutableArray *queryItems = [[NSMutableArray alloc] init];
 
-    NSUInteger lastIndex = locations.count - 1;
-    [locations enumerateObjectsUsingBlock:^(NSValue * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSString *itemName = idx == 0 ? @"start" : idx == lastIndex ? @"end" : @"via";
-        NSString *itemValue = [self stringFromCoordinate:obj.MKCoordinateValue];
-        [queryItems addObject:[NSURLQueryItem queryItemWithName:itemName value:itemValue]];
-    }];
-    
-    if (locations.count == 2) {
-        [queryItems addObject:[NSURLQueryItem queryItemWithName:@"via" value:@""]];
-    }
+    [queryItems addObject:[NSURLQueryItem queryItemWithName:@"start" value:[self stringFromCoordinateValue:locations.firstObject]]];
+    [queryItems addObject:[NSURLQueryItem queryItemWithName:@"end" value:[self stringFromCoordinateValue:locations.lastObject]]];
+    [queryItems addObject:[NSURLQueryItem queryItemWithName:@"via" value:[self stringFromCoordinateValues:locations]]];
 
     NSString *routePrefValue;
 
@@ -78,6 +71,28 @@
 
 + (NSString*)stringFromCoordinate:(CLLocationCoordinate2D)coordinate {
     return [NSString stringWithFormat:@"%f,%f", coordinate.longitude, coordinate.latitude];
+}
+
++ (NSString*)stringFromCoordinateValue:(NSValue *)coordinate {
+    return [self stringFromCoordinate:coordinate.MKCoordinateValue];
+}
+
++ (NSString*)stringFromCoordinateValues:(NSArray <NSValue *> *)coordinates {
+
+    if(coordinates.count <= 2) {
+        return @"";
+    }
+
+    NSMutableArray <NSString *> *descriptions = [NSMutableArray new];
+
+    NSUInteger lastIndex = coordinates.count - 1;
+    [coordinates enumerateObjectsUsingBlock:^(NSValue * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if(idx != 0 && idx != lastIndex ) {
+            [descriptions addObject:[self stringFromCoordinateValue:obj]];
+        }
+    }];
+
+    return [descriptions componentsJoinedByString:@" "];
 }
 
 @end
