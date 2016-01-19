@@ -8,7 +8,7 @@
 
 #import "UIViewController+HUD.h"
 #import <CSNotificationView/CSNotificationView.h>
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "OnionIndicatorView.h"
 
 @implementation UIViewController (HUD)
 
@@ -24,12 +24,11 @@
 }
 
 - (void)showProgressHUD {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [self.view addIndicator];
 }
 
 - (void)removeProgressHUD {
-    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+    [self.view removeIndicator];
 }
-
 
 @end

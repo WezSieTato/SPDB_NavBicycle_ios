@@ -39,6 +39,11 @@
 		BD193C651C4BB07200A96803 /* OpenRouteServiceQueryCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = BD193C621C4BB07200A96803 /* OpenRouteServiceQueryCreator.m */; };
 		BD193C661C4BB07200A96803 /* OpenRouteServiceResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD193C641C4BB07200A96803 /* OpenRouteServiceResponseParser.m */; };
 		BD193C691C4BB24300A96803 /* OpenRouteServiceRouteProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BD193C681C4BB24300A96803 /* OpenRouteServiceRouteProvider.m */; };
+		BD65EDBF1C4EA40B00DA17CD /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDBE1C4EA40B00DA17CD /* UIView+Additions.m */; };
+		BD65EDCF1C4EA45000DA17CD /* OnionIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD65EDC11C4EA45000DA17CD /* OnionIndicatorView.xib */; };
+		BD65EDD11C4EA45000DA17CD /* OnionIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDCA1C4EA45000DA17CD /* OnionIndicatorView.m */; };
+		BD65EDD21C4EA45000DA17CD /* UIView+OnionIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDCC1C4EA45000DA17CD /* UIView+OnionIndicator.m */; };
+		BD65EDD51C4ECF6E00DA17CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD65EDD41C4ECF6E00DA17CD /* QuartzCore.framework */; };
 		BD7DFD081C4ADB42001586EF /* OpenRouteServiceQueryCreatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DFD071C4ADB42001586EF /* OpenRouteServiceQueryCreatorTests.m */; };
 		BD7DFD0A1C4AE2CD001586EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7DFD091C4AE2CD001586EF /* MapKit.framework */; };
 		BD7DFD151C4AF707001586EF /* OpenRouteServiceResponseParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DFD141C4AF707001586EF /* OpenRouteServiceResponseParserTests.m */; };
@@ -119,6 +124,14 @@
 		BD193C641C4BB07200A96803 /* OpenRouteServiceResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceResponseParser.m; sourceTree = "<group>"; };
 		BD193C671C4BB24300A96803 /* OpenRouteServiceRouteProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenRouteServiceRouteProvider.h; sourceTree = "<group>"; };
 		BD193C681C4BB24300A96803 /* OpenRouteServiceRouteProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceRouteProvider.m; sourceTree = "<group>"; };
+		BD65EDBD1C4EA40B00DA17CD /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		BD65EDBE1C4EA40B00DA17CD /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		BD65EDC21C4EA45000DA17CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OnionIndicatorView.xib; sourceTree = "<group>"; };
+		BD65EDC91C4EA45000DA17CD /* OnionIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnionIndicatorView.h; sourceTree = "<group>"; };
+		BD65EDCA1C4EA45000DA17CD /* OnionIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnionIndicatorView.m; sourceTree = "<group>"; };
+		BD65EDCB1C4EA45000DA17CD /* UIView+OnionIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OnionIndicator.h"; sourceTree = "<group>"; };
+		BD65EDCC1C4EA45000DA17CD /* UIView+OnionIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OnionIndicator.m"; sourceTree = "<group>"; };
+		BD65EDD41C4ECF6E00DA17CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BD7DFD071C4ADB42001586EF /* OpenRouteServiceQueryCreatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceQueryCreatorTests.m; sourceTree = "<group>"; };
 		BD7DFD091C4AE2CD001586EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD7DFD141C4AF707001586EF /* OpenRouteServiceResponseParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceResponseParserTests.m; sourceTree = "<group>"; };
@@ -132,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD65EDD51C4ECF6E00DA17CD /* QuartzCore.framework in Frameworks */,
 				BD7DFD0A1C4AE2CD001586EF /* MapKit.framework in Frameworks */,
 				5F35DB48DD75D48DC2CDA97F /* libPods-SPDB_navibike.a in Frameworks */,
 			);
@@ -151,6 +165,7 @@
 		36775F9530760503A354D9EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD65EDD41C4ECF6E00DA17CD /* QuartzCore.framework */,
 				BD7DFD091C4AE2CD001586EF /* MapKit.framework */,
 				2F78ABFC6D2AAD24A6CA6EB8 /* libPods-SPDB_navibike.a */,
 				1A24F4E38EF8175CE88A2FC2 /* libPods-SPDB_navibikeTests.a */,
@@ -172,6 +187,7 @@
 		9E06B45F1C483A5E00DC6826 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BD65EDC01C4EA45000DA17CD /* OnionIndicator */,
 				9E26473E1C4D741B00AB4DF8 /* SelectRoute */,
 				9E26473D1C4D740300AB4DF8 /* RouteDescription */,
 				BD193C5C1C4BA95300A96803 /* MapViewController */,
@@ -180,6 +196,8 @@
 				9E06B4611C483A5E00DC6826 /* AppDelegate.m */,
 				9E26476B1C4DABBA00AB4DF8 /* UIViewController+HUD.h */,
 				9E26476C1C4DABBA00AB4DF8 /* UIViewController+HUD.m */,
+				BD65EDBD1C4EA40B00DA17CD /* UIView+Additions.h */,
+				BD65EDBE1C4EA40B00DA17CD /* UIView+Additions.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -335,6 +353,18 @@
 			path = OpenRouteService;
 			sourceTree = "<group>";
 		};
+		BD65EDC01C4EA45000DA17CD /* OnionIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				BD65EDC11C4EA45000DA17CD /* OnionIndicatorView.xib */,
+				BD65EDC91C4EA45000DA17CD /* OnionIndicatorView.h */,
+				BD65EDCA1C4EA45000DA17CD /* OnionIndicatorView.m */,
+				BD65EDCB1C4EA45000DA17CD /* UIView+OnionIndicator.h */,
+				BD65EDCC1C4EA45000DA17CD /* UIView+OnionIndicator.m */,
+			);
+			path = OnionIndicator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +434,10 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
+				it,
+				"pl-PL",
+				pl,
 			);
 			mainGroup = 9E1A70841C46F573004C1778;
 			productRefGroup = 9E1A708E1C46F573004C1778 /* Products */;
@@ -421,6 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD65EDCF1C4EA45000DA17CD /* OnionIndicatorView.xib in Resources */,
 				9E2647461C4D741B00AB4DF8 /* SelectPlaceView.xib in Resources */,
 				9E1A70A01C46F573004C1778 /* LaunchScreen.storyboard in Resources */,
 				9E1A709D1C46F573004C1778 /* Assets.xcassets in Resources */,
@@ -540,6 +575,7 @@
 				9E26475B1C4D78D900AB4DF8 /* SPDBRoute.m in Sources */,
 				9E26473C1C4D6EC700AB4DF8 /* MKPolylineView+ColorPolyline.m in Sources */,
 				9E2647551C4D78AB00AB4DF8 /* SPDBPoint.m in Sources */,
+				BD65EDD11C4EA45000DA17CD /* OnionIndicatorView.m in Sources */,
 				9E26475E1C4D7AFB00AB4DF8 /* NSArray+SPDBModel.m in Sources */,
 				9E26476A1C4D9AF300AB4DF8 /* SPDBRoute+Additions.m in Sources */,
 				9E2647581C4D78C900AB4DF8 /* SPDBStation.m in Sources */,
@@ -549,6 +585,7 @@
 				9E1A70921C46F573004C1778 /* main.m in Sources */,
 				9E2647611C4D83BB00AB4DF8 /* SPDBQueryCreator.m in Sources */,
 				BD193C651C4BB07200A96803 /* OpenRouteServiceQueryCreator.m in Sources */,
+				BD65EDBF1C4EA40B00DA17CD /* UIView+Additions.m in Sources */,
 				9E2647451C4D741B00AB4DF8 /* SelectPlaceView.m in Sources */,
 				9E2647491C4D75D600AB4DF8 /* RouteDescriptionTableViewController.m in Sources */,
 				9E2647391C4D67C700AB4DF8 /* ColorPolyline.m in Sources */,
@@ -559,6 +596,7 @@
 				BD193C661C4BB07200A96803 /* OpenRouteServiceResponseParser.m in Sources */,
 				9E2647641C4D88C500AB4DF8 /* SPDBRouteProvider.m in Sources */,
 				9E26474F1C4D761800AB4DF8 /* DistanceTableViewCell.m in Sources */,
+				BD65EDD21C4EA45000DA17CD /* UIView+OnionIndicator.m in Sources */,
 				9E06B4671C483A5E00DC6826 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +637,14 @@
 				9E1A709F1C46F573004C1778 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BD65EDC11C4EA45000DA17CD /* OnionIndicatorView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD65EDC21C4EA45000DA17CD /* Base */,
+			);
+			name = OnionIndicatorView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

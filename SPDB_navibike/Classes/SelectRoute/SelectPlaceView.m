@@ -9,6 +9,7 @@
 #import "SelectPlaceView.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <CSNotificationView/CSNotificationView.h>
+#import "UIView+Additions.h"
 
 @interface SelectPlaceView () <GMSAutocompleteViewControllerDelegate>
 
@@ -58,22 +59,6 @@
     self.layer.borderWidth = 1.0f;
     self.layer.borderColor = self.placeholderLabel.textColor.CGColor;
     self.clipsToBounds = YES;
-}
-
-- (void)addSubviewWithFitToParentConstraints:(UIView *)subview {
-    [self addSubview: subview];
-    
-    [subview setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self addConstraints:[NSLayoutConstraint
-                          constraintsWithVisualFormat:@"H:|-0-[subview]-0-|"
-                          options:NSLayoutFormatDirectionLeadingToTrailing
-                          metrics:nil
-                          views:NSDictionaryOfVariableBindings(subview)]];
-    [self addConstraints:[NSLayoutConstraint
-                          constraintsWithVisualFormat:@"V:|-0-[subview]-0-|"
-                          options:NSLayoutFormatDirectionLeadingToTrailing
-                          metrics:nil
-                          views:NSDictionaryOfVariableBindings(subview)]];
 }
 
 #pragma mark - Properties

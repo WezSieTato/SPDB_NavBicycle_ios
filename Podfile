@@ -9,7 +9,6 @@ target 'SPDB_navibike' do
     pod 'CSNotificationView', '~> 0.5'
     pod 'XMLDictionary', '~> 1.4'
     pod 'MSAddition', '~> 0.1'
-    pod 'MBProgressHUD', '~> 0.9'
 end
 
 target 'SPDB_navibikeTests' do
