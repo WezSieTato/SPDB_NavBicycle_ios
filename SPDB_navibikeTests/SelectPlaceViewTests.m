@@ -24,6 +24,4 @@
     FBSnapshotVerifyView([self view], nil);
 }
 
-
-
 @end
