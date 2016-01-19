@@ -10,7 +10,7 @@
 
 @interface NSArray (SPDBModel)
 
-+ (nonnull NSArray <id<SPDBModel>>*)arrayModelFromArrayDictionary:(NSArray <NSDictionary *>*)dictionariesArray
-                                                        withClass:(Class)pClass;
++ (nonnull NSArray <id<SPDBModel>>*)arrayModelFromArrayDictionary:(nonnull NSArray <NSDictionary *>*)dictionariesArray
+                                                        withClass:(nonnull Class)pClass;
 
 @end
