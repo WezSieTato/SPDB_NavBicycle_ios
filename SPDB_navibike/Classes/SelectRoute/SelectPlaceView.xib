@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectPlaceView">
+            <connections>
+                <outlet property="addressLabel" destination="e6E-k0-fLd" id="g0P-jf-0iE"/>
+                <outlet property="indicator" destination="Jqn-to-QTC" id="IX8-rZ-cJT"/>
+                <outlet property="placeholderLabel" destination="hFV-Wk-doc" id="yZH-NN-gWe"/>
+                <outlet property="smallButton" destination="7Kz-fo-4eH" id="Nbw-Co-Cyx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1Cr-fA-gyl">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRK-vx-oad">
+                    <rect key="frame" x="0.0" y="0.0" width="570" height="600"/>
+                    <animations/>
+                    <connections>
+                        <action selector="bigButtonTapped:" destination="-1" eventType="touchUpInside" id="quD-hf-xo7"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6E-k0-fLd">
+                    <rect key="frame" x="8" y="8" width="554" height="584"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kz-fo-4eH">
+                    <rect key="frame" x="570" y="289" width="22" height="22"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="z7I-Tp-AX8"/>
+                    </constraints>
+                    <state key="normal" image="geolocate"/>
+                    <connections>
+                        <action selector="smallButtonTapped:" destination="-1" eventType="touchUpInside" id="VpR-lT-pLj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFV-Wk-doc">
+                    <rect key="frame" x="8" y="0.0" width="554" height="600"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <color key="textColor" red="0.52912303664921467" green="0.52912303664921467" blue="0.52912303664921467" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Jqn-to-QTC">
+                    <rect key="frame" x="571" y="290" width="20" height="20"/>
+                    <animations/>
+                </activityIndicatorView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.91805055628272247" green="0.91805055628272247" blue="0.91805055628272247" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="WRK-vx-oad" firstAttribute="leading" secondItem="1Cr-fA-gyl" secondAttribute="leading" id="6oP-gb-4Cg"/>
+                <constraint firstItem="Jqn-to-QTC" firstAttribute="centerY" secondItem="7Kz-fo-4eH" secondAttribute="centerY" id="Bem-6Y-w90"/>
+                <constraint firstAttribute="bottom" secondItem="WRK-vx-oad" secondAttribute="bottom" id="Gko-HG-ba3"/>
+                <constraint firstItem="7Kz-fo-4eH" firstAttribute="leading" secondItem="hFV-Wk-doc" secondAttribute="trailing" constant="8" id="Obq-wk-kCX"/>
+                <constraint firstItem="e6E-k0-fLd" firstAttribute="top" secondItem="1Cr-fA-gyl" secondAttribute="top" constant="8" id="QAL-HF-X5d"/>
+                <constraint firstItem="hFV-Wk-doc" firstAttribute="top" secondItem="1Cr-fA-gyl" secondAttribute="top" id="Svw-On-DMF"/>
+                <constraint firstItem="7Kz-fo-4eH" firstAttribute="leading" secondItem="e6E-k0-fLd" secondAttribute="trailing" constant="8" id="bgs-mK-4tb"/>
+                <constraint firstItem="WRK-vx-oad" firstAttribute="top" secondItem="1Cr-fA-gyl" secondAttribute="top" id="cCR-WF-oz4"/>
+                <constraint firstAttribute="bottom" secondItem="hFV-Wk-doc" secondAttribute="bottom" id="eil-M0-UCO"/>
+                <constraint firstItem="e6E-k0-fLd" firstAttribute="leading" secondItem="1Cr-fA-gyl" secondAttribute="leading" constant="8" id="hdn-0D-69Y"/>
+                <constraint firstItem="7Kz-fo-4eH" firstAttribute="centerY" secondItem="1Cr-fA-gyl" secondAttribute="centerY" id="lnz-nJ-ZXi"/>
+                <constraint firstAttribute="bottom" secondItem="e6E-k0-fLd" secondAttribute="bottom" constant="8" id="nba-2x-DnO"/>
+                <constraint firstItem="Jqn-to-QTC" firstAttribute="centerX" secondItem="7Kz-fo-4eH" secondAttribute="centerX" id="tbZ-58-Haf"/>
+                <constraint firstItem="7Kz-fo-4eH" firstAttribute="leading" secondItem="WRK-vx-oad" secondAttribute="trailing" id="unx-Tf-m0E"/>
+                <constraint firstAttribute="trailing" secondItem="7Kz-fo-4eH" secondAttribute="trailing" constant="8" id="wRD-Ag-TKt"/>
+                <constraint firstItem="hFV-Wk-doc" firstAttribute="leading" secondItem="1Cr-fA-gyl" secondAttribute="leading" constant="8" id="zFv-hX-73M"/>
+            </constraints>
+            <point key="canvasLocation" x="557" y="391"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="geolocate" width="22" height="22"/>
+    </resources>
+</document>
