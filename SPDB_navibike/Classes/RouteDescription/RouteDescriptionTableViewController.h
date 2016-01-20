@@ -12,5 +12,7 @@
 @interface RouteDescriptionTableViewController : UITableViewController
 
 @property (nonatomic, nonnull, strong) SPDBRoute *route;
+@property (nonatomic, nonnull, copy) NSString *startName;
+@property (nonatomic, nonnull, copy) NSString *endName;
 
 @end

@@ -44,6 +44,7 @@
 		BD65EDD11C4EA45000DA17CD /* OnionIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDCA1C4EA45000DA17CD /* OnionIndicatorView.m */; };
 		BD65EDD21C4EA45000DA17CD /* UIView+OnionIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDCC1C4EA45000DA17CD /* UIView+OnionIndicator.m */; };
 		BD65EDD51C4ECF6E00DA17CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD65EDD41C4ECF6E00DA17CD /* QuartzCore.framework */; };
+		BD65EDD81C4F00CA00DA17CD /* PointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDD71C4F00CA00DA17CD /* PointAnnotation.m */; };
 		BD7DFD081C4ADB42001586EF /* OpenRouteServiceQueryCreatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DFD071C4ADB42001586EF /* OpenRouteServiceQueryCreatorTests.m */; };
 		BD7DFD0A1C4AE2CD001586EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7DFD091C4AE2CD001586EF /* MapKit.framework */; };
 		BD7DFD151C4AF707001586EF /* OpenRouteServiceResponseParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DFD141C4AF707001586EF /* OpenRouteServiceResponseParserTests.m */; };
@@ -132,6 +133,8 @@
 		BD65EDCB1C4EA45000DA17CD /* UIView+OnionIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OnionIndicator.h"; sourceTree = "<group>"; };
 		BD65EDCC1C4EA45000DA17CD /* UIView+OnionIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OnionIndicator.m"; sourceTree = "<group>"; };
 		BD65EDD41C4ECF6E00DA17CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BD65EDD61C4F00CA00DA17CD /* PointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointAnnotation.h; sourceTree = "<group>"; };
+		BD65EDD71C4F00CA00DA17CD /* PointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointAnnotation.m; sourceTree = "<group>"; };
 		BD7DFD071C4ADB42001586EF /* OpenRouteServiceQueryCreatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceQueryCreatorTests.m; sourceTree = "<group>"; };
 		BD7DFD091C4AE2CD001586EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD7DFD141C4AF707001586EF /* OpenRouteServiceResponseParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceResponseParserTests.m; sourceTree = "<group>"; };
@@ -336,6 +339,8 @@
 				9E26473B1C4D6EC700AB4DF8 /* MKPolylineView+ColorPolyline.m */,
 				9E26476E1C4DB23B00AB4DF8 /* StationAnnotation.h */,
 				9E26476F1C4DB23B00AB4DF8 /* StationAnnotation.m */,
+				BD65EDD61C4F00CA00DA17CD /* PointAnnotation.h */,
+				BD65EDD71C4F00CA00DA17CD /* PointAnnotation.m */,
 			);
 			path = MapViewController;
 			sourceTree = "<group>";
@@ -598,6 +603,7 @@
 				9E26474F1C4D761800AB4DF8 /* DistanceTableViewCell.m in Sources */,
 				BD65EDD21C4EA45000DA17CD /* UIView+OnionIndicator.m in Sources */,
 				9E06B4671C483A5E00DC6826 /* AppDelegate.m in Sources */,
+				BD65EDD81C4F00CA00DA17CD /* PointAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UINavigationController *navigationController;
 @property (nonatomic, copy) NSString *placeholderText;
+@property (nonatomic, readonly) NSString *text;
 
 @property (nonatomic, readonly, assign) CLLocationCoordinate2D coordinate;
 @property (nonatomic, readonly) BOOL isValidCoordinate;

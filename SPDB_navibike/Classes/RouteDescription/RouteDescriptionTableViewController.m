@@ -59,6 +59,8 @@
     [self showProgressHUD];
 
     __weak typeof(self) wSelf = self;
+
+    if(self.route.costs.count) {
     [self.routeProvider getRouteWithLocations:[self startCoordinates]
                              routePreferences:OpenRouteServiceRoutePreferencesPedestrian
                         withCompletionHandler:^(NSArray<NSValue *> *route, OpenRouteServiceRoutePreferences preferences, NSError *error) {
@@ -92,6 +94,25 @@
                                 [wSelf showError:error];
                             }
                         }];
+    } else {
+        [self.routeProvider getRouteWithLocations:[self onlyPedestrianCoordinates]
+                                 routePreferences:OpenRouteServiceRoutePreferencesPedestrian
+                            withCompletionHandler:^(NSArray<NSValue *> *route, OpenRouteServiceRoutePreferences preferences, NSError *error) {
+                                if (error == nil) {
+                                    ColorPolyline *polyline = [wSelf polylineWithCoordinates:route routePreferences:preferences];
+                                    [wSelf showMapWithPolyline:@[polyline]];
+                                } else {
+                                    [wSelf showError:error];
+                                }
+                            }];
+    }
+}
+
+- (NSArray <NSValue *> *)onlyPedestrianCoordinates {
+    return @[
+             [NSValue valueWithMKCoordinate:self.route.start.coordinate],
+             [NSValue valueWithMKCoordinate:self.route.end.coordinate]
+             ];
 }
 
 - (NSArray <NSValue *> *)startCoordinates {
@@ -134,13 +155,21 @@
 
 - (void)checkIsFetchingCompleted {
     if (self.routeProvider.finishedTasks == 3) {
-        [self removeProgressHUD];
-        MapViewController *viewController =
-        [self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
-        viewController.colorPolylines = @[self.startPolyline, self.bicyclePolyline, self.endPolyline];
-        viewController.stations = self.route.stations;
-        [self.navigationController pushViewController:viewController animated:YES];
+        [self showMapWithPolyline: @[self.startPolyline, self.bicyclePolyline, self.endPolyline]];
     }
+}
+
+- (void)showMapWithPolyline:(NSArray <ColorPolyline *> *)polylines {
+    [self removeProgressHUD];
+    MapViewController *viewController =
+    [self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
+    viewController.colorPolylines = polylines;
+    viewController.stations = self.route.stations;
+    viewController.start = self.route.start;
+    viewController.end = self.route.end;
+    viewController.startName = self.startName;
+    viewController.endName = self.endName;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - Table view data source

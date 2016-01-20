@@ -63,6 +63,9 @@
                               RouteDescriptionTableViewController *viewController =
                                       [self.storyboard instantiateViewControllerWithIdentifier:@"RouteDescriptionTableViewController"];
                               viewController.route = route;
+                              viewController.startName = self.fromPlaceView.text;
+                              viewController.endName = self.toPlaceView.text;
+
                               [self.navigationController pushViewController:viewController animated:YES];
                           } else {
                               [self showError:error];

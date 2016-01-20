@@ -24,11 +24,11 @@
 }
 
 - (void)showProgressHUD {
-    [self.view addIndicator];
+    [self.navigationController.view addIndicator];
 }
 
 - (void)removeProgressHUD {
-    [self.view removeIndicator];
+    [self.navigationController.view removeIndicator];
 }
 
 @end

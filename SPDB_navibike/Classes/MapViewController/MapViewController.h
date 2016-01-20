@@ -13,5 +13,9 @@
 
 @property (nonatomic, nonnull, strong) NSArray <ColorPolyline *> *colorPolylines;
 @property (nonatomic, nonnull, strong) NSArray <SPDBStation *> *stations;
+@property (nonatomic, nonnull, strong) SPDBPoint *start;
+@property (nonatomic, nonnull, strong) SPDBPoint *end;
+@property (nonatomic, nonnull, copy) NSString *startName;
+@property (nonatomic, nonnull, copy) NSString *endName;
 
 @end

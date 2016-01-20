@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MGi-pP-tpI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MGi-pP-tpI">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Wybierz trase-->
@@ -69,11 +69,11 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xcu-pd-3dZ" id="KXb-ki-IR6">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Stacja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jdF-CB-Rcx">
-                                            <rect key="frame" x="15" y="5" width="45" height="20"/>
+                                            <rect key="frame" x="15" y="6" width="45" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -81,7 +81,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ul Jana Pawła" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vgx-5l-Khf">
-                                            <rect key="frame" x="15" y="25" width="71" height="14"/>
+                                            <rect key="frame" x="15" y="25.5" width="71" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -97,11 +97,11 @@
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vHT-0S-PGZ" id="Wup-4G-ODa">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Koszt" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Y6-7u-iE6">
-                                            <rect key="frame" x="15" y="14" width="91" height="15"/>
+                                            <rect key="frame" x="15" y="15" width="91" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -109,7 +109,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2 zł" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ew-ii-eAO">
-                                            <rect key="frame" x="112" y="14" width="21" height="15"/>
+                                            <rect key="frame" x="112" y="15" width="20.5" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -125,11 +125,11 @@
                                 <rect key="frame" x="0.0" y="116" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sj9-fp-3AC" id="Lyx-rS-3rw">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Suma" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iKB-ZD-kOi">
-                                            <rect key="frame" x="15" y="14" width="91" height="15"/>
+                                            <rect key="frame" x="15" y="15" width="91" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -137,7 +137,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2 zł" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PGg-rJ-tUY">
-                                            <rect key="frame" x="112" y="14" width="21" height="15"/>
+                                            <rect key="frame" x="112" y="15" width="20.5" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -176,24 +176,73 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <animations/>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-Wr-boU">
+                                <rect key="frame" x="0.0" y="20" width="600" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbląska" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ph-hf-WIN">
+                                        <rect key="frame" x="22" y="11" width="556" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4Ph-hf-WIN" secondAttribute="trailing" constant="22" id="I6g-kD-Ebk"/>
+                                    <constraint firstItem="4Ph-hf-WIN" firstAttribute="leading" secondItem="Uj1-Wr-boU" secondAttribute="leading" constant="22" id="a65-Fq-nrH"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Ph-hf-WIN" secondAttribute="bottom" constant="11" id="eZX-Gg-kt6"/>
+                                    <constraint firstItem="4Ph-hf-WIN" firstAttribute="top" secondItem="Uj1-Wr-boU" secondAttribute="top" constant="11" id="o1O-xE-m6R"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBP-VL-FE0">
+                                <rect key="frame" x="0.0" y="558" width="600" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elbląska" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-wk-Ojb">
+                                        <rect key="frame" x="22" y="11" width="556" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YhK-wk-Ojb" secondAttribute="bottom" constant="11" id="7VZ-i4-aWN"/>
+                                    <constraint firstAttribute="trailing" secondItem="YhK-wk-Ojb" secondAttribute="trailing" constant="22" id="Tj3-Er-0jg"/>
+                                    <constraint firstItem="YhK-wk-Ojb" firstAttribute="top" secondItem="tBP-VL-FE0" secondAttribute="top" constant="11" id="egn-FH-sbB"/>
+                                    <constraint firstItem="YhK-wk-Ojb" firstAttribute="leading" secondItem="tBP-VL-FE0" secondAttribute="leading" constant="22" id="kkV-JQ-QAK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TxY-ZE-rdf" firstAttribute="top" secondItem="cAX-mn-74g" secondAttribute="bottom" id="70V-EG-pts"/>
+                            <constraint firstAttribute="trailing" secondItem="tBP-VL-FE0" secondAttribute="trailing" id="EhD-48-3rr"/>
                             <constraint firstItem="TxY-ZE-rdf" firstAttribute="leading" secondItem="eoq-hm-CGO" secondAttribute="leading" id="Ggh-bS-aOF"/>
                             <constraint firstItem="fK6-KE-Fof" firstAttribute="top" secondItem="TxY-ZE-rdf" secondAttribute="bottom" id="JOq-fc-DBd"/>
+                            <constraint firstItem="Uj1-Wr-boU" firstAttribute="top" secondItem="cAX-mn-74g" secondAttribute="bottom" id="Lsn-hf-Ogp"/>
+                            <constraint firstItem="Uj1-Wr-boU" firstAttribute="leading" secondItem="eoq-hm-CGO" secondAttribute="leading" id="N8o-uW-RkM"/>
+                            <constraint firstItem="fK6-KE-Fof" firstAttribute="top" secondItem="tBP-VL-FE0" secondAttribute="bottom" id="OFa-qb-muX"/>
+                            <constraint firstItem="tBP-VL-FE0" firstAttribute="leading" secondItem="eoq-hm-CGO" secondAttribute="leading" id="YAe-wA-ONP"/>
+                            <constraint firstAttribute="trailing" secondItem="Uj1-Wr-boU" secondAttribute="trailing" id="tQi-Of-cIb"/>
                             <constraint firstAttribute="trailing" secondItem="TxY-ZE-rdf" secondAttribute="trailing" id="yON-DL-jQt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qRu-7b-s1M"/>
                     <connections>
+                        <outlet property="endLabel" destination="YhK-wk-Ojb" id="eNj-oE-roT"/>
+                        <outlet property="endView" destination="tBP-VL-FE0" id="Gey-sr-QTt"/>
                         <outlet property="mapView" destination="TxY-ZE-rdf" id="q8D-rG-1S8"/>
+                        <outlet property="startLabel" destination="4Ph-hf-WIN" id="ia2-Ag-REy"/>
+                        <outlet property="startView" destination="Uj1-Wr-boU" id="pGH-4n-JPo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijK-CX-epa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="1812"/>
+            <point key="canvasLocation" x="841" y="1812"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nAW-XI-zkQ">

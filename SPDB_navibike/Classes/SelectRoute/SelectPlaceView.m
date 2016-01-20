@@ -90,6 +90,10 @@
     return self.place;
 }
 
+-(NSString *)text {
+    return self.addressLabel.text;
+}
+
 #pragma mark - UI Events
 
 - (IBAction)bigButtonTapped:(id)sender {
