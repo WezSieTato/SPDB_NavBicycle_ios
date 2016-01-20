@@ -31,8 +31,8 @@
     self.fromPlaceView.navigationController = self.navigationController;
     self.toPlaceView.navigationController = self.navigationController;
     
-    self.fromPlaceView.placeholderText = @"From";
-    self.toPlaceView.placeholderText = @"To";
+    self.fromPlaceView.placeholderText = @"Z";
+    self.toPlaceView.placeholderText = @"Do";
     
     NSArray* toolbarItems = [NSArray arrayWithObjects:
                              [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
