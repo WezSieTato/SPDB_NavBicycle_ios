@@ -9,7 +9,7 @@
 #import "SelectPlaceView.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <CSNotificationView/CSNotificationView.h>
-#import "UIView+Additions.h"
+#import <MSAddition/UIView+MSAddition.h>
 
 @interface SelectPlaceView () <GMSAutocompleteViewControllerDelegate>
 
@@ -46,7 +46,7 @@
     UIView *view =  [[[NSBundle mainBundle] loadNibNamed:@"SelectPlaceView"
                                                    owner:self
                                                  options:nil] objectAtIndex:0];
-    [self addSubviewWithFitToParentConstraints:view];
+    [self ms_addSubviewWithFitToParentConstraints:view];
     
     self.client = [[GMSPlacesClient alloc] init];}
 

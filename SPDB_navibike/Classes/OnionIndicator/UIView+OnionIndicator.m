@@ -7,13 +7,13 @@
 //
 
 #import "UIView+OnionIndicator.h"
-#import "UIView+Additions.h"
 #import "OnionIndicatorView.h"
+#import <MSAddition/UIView+MSAddition.h>
 
 @implementation UIView (OnionIndicator)
 
 - (OnionIndicatorView *)indicator{
-    NSEnumerator *subviewsEnum = [self.allSubViews reverseObjectEnumerator];
+    NSEnumerator *subviewsEnum = [self.ms_allSubViews reverseObjectEnumerator];
     for (UIView *subview in subviewsEnum) {
         if ([subview isKindOfClass:[OnionIndicatorView class]]) {
             return (OnionIndicatorView *)subview;
@@ -28,7 +28,7 @@
         return hud;
     
     hud = [OnionIndicatorView indicator];
-    [self addSubviewWithFitToParentConstraints:hud];
+    [self ms_addSubviewWithFitToParentConstraints:hud];
     
     return hud;
 }

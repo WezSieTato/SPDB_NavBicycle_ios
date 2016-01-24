@@ -2,21 +2,21 @@ PODS:
   - CSNotificationView (0.5.4)
   - FBSnapshotTestCase/Core (2.0.7)
   - GoogleMaps (1.11.1)
-  - MSAddition (0.1.0)
+  - MSAddition (0.1.1)
   - XMLDictionary (1.4)
 
 DEPENDENCIES:
   - CSNotificationView (~> 0.5)
   - FBSnapshotTestCase/Core (~> 2.0)
   - GoogleMaps
-  - MSAddition (~> 0.1)
+  - MSAddition (~> 0.1.1)
   - XMLDictionary (~> 1.4)
 
 SPEC CHECKSUMS:
   CSNotificationView: 0792f5220163c2befaf1a9716aa3d5a7d6bd4fb1
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
   GoogleMaps: c947160008f414c66707a5ea60f35e92055c7670
-  MSAddition: d4d1649dab26030ce1ee0e35302401a9f59937e1
+  MSAddition: cdb20c3bc38065c2343923ac458b7630d1f8ff69
   XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
 
 COCOAPODS: 0.39.0

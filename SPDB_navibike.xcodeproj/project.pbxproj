@@ -39,7 +39,6 @@
 		BD193C651C4BB07200A96803 /* OpenRouteServiceQueryCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = BD193C621C4BB07200A96803 /* OpenRouteServiceQueryCreator.m */; };
 		BD193C661C4BB07200A96803 /* OpenRouteServiceResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD193C641C4BB07200A96803 /* OpenRouteServiceResponseParser.m */; };
 		BD193C691C4BB24300A96803 /* OpenRouteServiceRouteProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BD193C681C4BB24300A96803 /* OpenRouteServiceRouteProvider.m */; };
-		BD65EDBF1C4EA40B00DA17CD /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDBE1C4EA40B00DA17CD /* UIView+Additions.m */; };
 		BD65EDCF1C4EA45000DA17CD /* OnionIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD65EDC11C4EA45000DA17CD /* OnionIndicatorView.xib */; };
 		BD65EDD11C4EA45000DA17CD /* OnionIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDCA1C4EA45000DA17CD /* OnionIndicatorView.m */; };
 		BD65EDD21C4EA45000DA17CD /* UIView+OnionIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BD65EDCC1C4EA45000DA17CD /* UIView+OnionIndicator.m */; };
@@ -125,8 +124,6 @@
 		BD193C641C4BB07200A96803 /* OpenRouteServiceResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceResponseParser.m; sourceTree = "<group>"; };
 		BD193C671C4BB24300A96803 /* OpenRouteServiceRouteProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenRouteServiceRouteProvider.h; sourceTree = "<group>"; };
 		BD193C681C4BB24300A96803 /* OpenRouteServiceRouteProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenRouteServiceRouteProvider.m; sourceTree = "<group>"; };
-		BD65EDBD1C4EA40B00DA17CD /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
-		BD65EDBE1C4EA40B00DA17CD /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		BD65EDC21C4EA45000DA17CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OnionIndicatorView.xib; sourceTree = "<group>"; };
 		BD65EDC91C4EA45000DA17CD /* OnionIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnionIndicatorView.h; sourceTree = "<group>"; };
 		BD65EDCA1C4EA45000DA17CD /* OnionIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnionIndicatorView.m; sourceTree = "<group>"; };
@@ -199,8 +196,6 @@
 				9E06B4611C483A5E00DC6826 /* AppDelegate.m */,
 				9E26476B1C4DABBA00AB4DF8 /* UIViewController+HUD.h */,
 				9E26476C1C4DABBA00AB4DF8 /* UIViewController+HUD.m */,
-				BD65EDBD1C4EA40B00DA17CD /* UIView+Additions.h */,
-				BD65EDBE1C4EA40B00DA17CD /* UIView+Additions.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -590,7 +585,6 @@
 				9E1A70921C46F573004C1778 /* main.m in Sources */,
 				9E2647611C4D83BB00AB4DF8 /* SPDBQueryCreator.m in Sources */,
 				BD193C651C4BB07200A96803 /* OpenRouteServiceQueryCreator.m in Sources */,
-				BD65EDBF1C4EA40B00DA17CD /* UIView+Additions.m in Sources */,
 				9E2647451C4D741B00AB4DF8 /* SelectPlaceView.m in Sources */,
 				9E2647491C4D75D600AB4DF8 /* RouteDescriptionTableViewController.m in Sources */,
 				9E2647391C4D67C700AB4DF8 /* ColorPolyline.m in Sources */,
